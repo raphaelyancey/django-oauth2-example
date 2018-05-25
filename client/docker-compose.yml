@@ -1,0 +1,8 @@
+version: '2'
+services:
+  app:
+    build: .
+    ports:
+      - "9988:8000"
+    volumes:
+      - ./:/srv/app
