@@ -1,0 +1,16 @@
+version: '2'
+services:
+  client:
+    build: ./client
+    ports:
+      - "9988:8000"
+    volumes:
+      - ./client:/srv/app
+    links:
+      - server:my-oauth2-server.dev
+  server:
+    build: ./server
+    ports:
+      - "9977:8000"
+    volumes:
+      - ./server:/srv/app
