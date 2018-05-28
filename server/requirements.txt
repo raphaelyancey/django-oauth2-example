@@ -1,0 +1,3 @@
+ipython
+django==2.0.5
+django-oauth-toolkit==1.1.2
